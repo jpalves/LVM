@@ -1,0 +1,26 @@
+%-----------------------------------------------------------------------
+%JPAlves 2008
+%-----------------------------------Matlab------------------------------
+\RequirePackage{listings}
+\RequirePackage{color}
+\RequirePackage{rotating}
+\RequirePackage{courier}
+\normalfont
+
+\newcommand{\FicheiroM}[1]{
+    {\fontfamily{pcr}\fontseries{m}\selectfont
+        \begin{lstinputlisting}[language=Matlab]{#1.m}%
+            \label{code:#1}%
+        \end{lstinputlisting}
+    }
+}
+
+\lstset{
+        extendedchars=true,%
+        basicstyle=\small,%
+        commentstyle=\ttfamily\color[rgb]{0,0.5,0},%
+        stringstyle=\color[rgb]{0,0.5,0.8},%
+        keywordstyle=\color[rgb]{0,0.0,0.8},%
+        showstringspaces=false,%
+}
+%-----------------------------------------------------------------------
